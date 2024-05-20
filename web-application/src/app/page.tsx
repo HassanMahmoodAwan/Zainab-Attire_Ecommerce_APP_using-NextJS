@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "@/components/Header-Footer/Navbar";
+import Navbar from "@/components/Header-Footer/Header";
 import Footer from "@/components/Header-Footer/Footer";
 import Hero from "@/components/HomePage/Hero";
 import Products from "@/components/HomePage/Products";

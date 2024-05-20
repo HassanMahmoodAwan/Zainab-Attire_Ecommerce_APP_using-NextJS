@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import {NextUIProvider} from "@nextui-org/react";
 import "./globals.css";
-import Navbar from "@/components/Header-Footer/Navbar";
+import Navbar from "@/components/Header-Footer/Header";
 import Footer from "@/components/Header-Footer/Footer";
+
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -22,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <NextUIProvider >
         <Navbar />
         {children}
         <Footer />
+        </NextUIProvider>
         
       </body>
     </html>
